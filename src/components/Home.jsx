@@ -5,6 +5,7 @@ import axios from 'axios'
 export default function Home() {
 
     const [search, setSearch] = useState('')
+    const [isLoading, setIsLoading] = useState(true)
     const [mangaList, setMangaList] = useState([])
     useEffect(() => {
         const getDataFromSearch = async () => {
@@ -14,7 +15,7 @@ export default function Home() {
             } catch(error) {
                 console.error(`Error: ${error.message}, while requesting Kitsu API`)
             } finally {
-
+                setIsLoading(false)
             }
         }
         getDataFromSearch()
