@@ -11,5 +11,12 @@ $  npm run dev
 Starting using Semantic UI React:
 $  npm install semantic-ui-react semantic-ui-css
 
+Creation of custom Router.jsx
+
+Install prettier conf:
+URL: https://prettier.io/docs/en/configuration.html
+
+
+
 
 
