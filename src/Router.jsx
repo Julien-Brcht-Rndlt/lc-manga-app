@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import NavBar from './components/NavBar'
 import Home from './components/Home'
 import Contact from './components/Contact'
 
@@ -18,8 +19,9 @@ export default function MyAppRouter() {
                 </nav>
             </div> 
             */}
-            
+
             {/* using Semantic UI */}
+            <NavBar/>
 
             <Switch>
                 <Route exact path="/">
